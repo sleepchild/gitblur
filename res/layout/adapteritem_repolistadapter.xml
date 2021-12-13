@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fx="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <sleepviews.RoundyView 
+        android:id="@+id/repolistitem_borders"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        fx:borderWidth="1dp"
+        fx:borderColor="#1167b1"
+        fx:cornerRadius="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/repolistitem_reponame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/c16b"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1.0"/>
+
+            <LinearLayout
+                android:id="@+id/repolistitem_e12"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:layout_width="22dp"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="22dp"
+                    android:background="@drawable/warning"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/repolistitem_origin_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/c16b"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/c16b"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </sleepviews.RoundyView>
+
+</LinearLayout>
+
+
+
+

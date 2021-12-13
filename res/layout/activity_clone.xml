@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fx="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_clone_messagetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        
+        <sleepviews.RoundyView
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            fx:borderWidth="1dp"
+            fx:borderColor="@color/c16b">
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:id="@+id/activity_clone_eturl"
+                android:layout_width="0dp"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginRight="10dp"
+                android:hint="type or paste url"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#1167b1"/>
+            
+            <LinearLayout
+                android:id="@+id/activity_clone_pasteurl"
+                android:onClick="onButton"
+                android:orientation="vertical"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:clickable="false"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/paste_clip"/>
+
+            </LinearLayout>
+
+        </sleepviews.RoundyView>
+        
+        <sleepviews.RoundyView
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fx:borderWidth="1dp"
+            fx:borderColor="@color/c16b">
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:id="@+id/activity_clone_etdirectory"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="50dp"
+                android:hint="local directory name"/>
+
+        </sleepviews.RoundyView>
+        
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical">
+
+            <sleepviews.RoundyButton
+                android:id="@+id/activity_clone_savepwdun"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="save"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                fx:cornerRadius="4dp"
+                fx:borderColor="#1167b1"
+                fx:borderWidth="1dp"/>
+
+        </LinearLayout>
+        
+        <sleepviews.RoundyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fx:borderColor="#1167b1"
+            fx:borderWidth="1dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+            
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:id="@+id/activity_clone_etusername"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:hint="username"/>
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1167b1"/>
+            
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/activity_clone_etpassword"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:hint="password"/>
+                
+        </sleepviews.RoundyView>
+        
+        <sleepviews.RoundyButton
+            android:id="@+id/activity_clone_btnClone"
+            android:onClick="onButton"
+            android:layout_width="match_parent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="80dp"
+            android:text="clone"
+            android:layout_marginTop="20dp"
+            fx:borderColor="#1F70CC"
+            fx:backgroundColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

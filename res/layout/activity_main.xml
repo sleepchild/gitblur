@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/main_list24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <sleepviews.RoundyView
+        android:onClick="onButton"
+        android:id="@+id/activity_main_btn_clone"
+        android:orientation="vertical"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        fx:backgroundColor="#FFFFFF"
+        fx:borderColor="@color/c16b"
+        android:gravity="center">
+
+        <ImageView
+            android:clickable="false"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_add_black_24dp"/>
+
+    </sleepviews.RoundyView>
+
+</RelativeLayout>
+
+

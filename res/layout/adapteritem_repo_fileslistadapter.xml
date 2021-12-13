@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/adapteritem_repo_file_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_folder_d"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adapteritem_repo_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="filename"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+
+

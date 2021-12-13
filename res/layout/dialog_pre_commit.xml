@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/dialog_pre_commit_message"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="50dp"
+        android:hint="Commit Message"/>
+
+    <EditText
+        android:id="@+id/dialog_pre_commit_author"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="50dp"
+        android:hint="Author (optional)"/>
+    
+    <EditText
+        android:id="@+id/dialog_pre_commit_author_mail"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="50dp"
+        android:hint="Author Email (optional)"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialog_pre_commit_cancel"
+            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_weight="1.0"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/dialog_pre_commit_gocommit"
+            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:text="commit"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

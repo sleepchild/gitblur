@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/repository_activity_list88"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/repository_activity_drawer_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:onClick="none">
+
+        <LinearLayout
+            android:onClick="closeDrawer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.5"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:onClick="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="150dp"
+            android:padding="10dp">
+            
+            <sleepviews.RoundyView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                fx:borderColor="#05539b"
+                fx:backgroundColor="#ffffff"
+                fx:borderWidth="2dp"
+                fx:cornerRadius="10dp"
+                android:onClick="onActionDrawerButton"
+                android:tag="@string/add">
+
+                <TextView
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:textColor="#05539B"/>
+
+            </sleepviews.RoundyView>
+            
+            <sleepviews.RoundyView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                fx:borderColor="#05539b"
+                fx:backgroundColor="#ffffff"
+                fx:borderWidth="2dp"
+                fx:cornerRadius="10dp"
+                android:onClick="onActionDrawerButton"
+                android:tag="@string/commit">
+
+                <TextView
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commit"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:textColor="#05539B"/>
+
+            </sleepviews.RoundyView>
+
+            <sleepviews.RoundyView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                fx:borderColor="#05539b"
+                fx:backgroundColor="#ffffff"
+                fx:borderWidth="2dp"
+                fx:cornerRadius="10dp"
+                android:onClick="onActionDrawerButton"
+                android:tag="@string/push">
+
+                <TextView
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/push"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="19sp"
+                    android:textColor="#05539B"/>
+
+            </sleepviews.RoundyView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

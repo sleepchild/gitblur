@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">gitblur</string>
+    <string name="cloneact">Clone</string>
+    <string name="add">add</string>
+    <string name="commit">commit</string>
+    <string name="push">push</string>
+    <string name="clone">clone</string>
+    
+</resources>
