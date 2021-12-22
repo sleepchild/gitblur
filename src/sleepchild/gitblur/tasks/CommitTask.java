@@ -27,12 +27,14 @@ public class CommitTask extends AsyncTask<Void, Void, Boolean>
     }
 
     @Override
-    protected Boolean doInBackground(Void[] p1)
-    {
+    protected Boolean doInBackground(Void[] p1){
         CommitCommand cmd = repo.git.commit();
+        cmd.setAll(true);
         cmd.setMessage(commitMessage);
-        if(authorName!=null || !authorName.isEmpty()){
-            cmd.setAuthor(authorName, authorEmail);
+        if(authorName!=null && authorEmail!=null){
+            if(!authorName.isEmpty()){
+                cmd.setAuthor(authorName, authorEmail);
+            }
         }
         try{
             cmd.call();
@@ -44,8 +46,7 @@ public class CommitTask extends AsyncTask<Void, Void, Boolean>
     }
 
     @Override
-    protected void onPostExecute(Boolean result)
-    {
+    protected void onPostExecute(Boolean result){
         if(result && cb!=null){
             cb.onTaskComplete(this, completeMessage);  
         }else{

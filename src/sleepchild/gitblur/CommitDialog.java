@@ -41,7 +41,7 @@ public class CommitDialog extends BaseDialog implements View.OnClickListener
             return;
         }
         
-        if(author==null || author.isEmpty()){
+        if(author!=null && !author.isEmpty()){
             new CommitTask(repo,message, author, email, cb).execute();
         }else{
             new CommitTask(repo, message, cb).execute();

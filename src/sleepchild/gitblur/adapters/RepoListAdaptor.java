@@ -63,10 +63,10 @@ public class RepoListAdaptor extends BaseAdapter
 
         v = inf.inflate(R.layout.adapteritem_repolistadapter, null, false);
 
-        TextView name = v.findViewById(R.id.repolistitem_reponame);
+        TextView name = (TextView) v.findViewById(R.id.repolistitem_reponame);
         name.setText(ri.name);
 
-        TextView remoteurl = v.findViewById(R.id.repolistitem_origin_path);
+        TextView remoteurl = (TextView) v.findViewById(R.id.repolistitem_origin_path);
         remoteurl.setText(ri.remoteurl);
 
         if(ri.status_err || ri.uncloned){

@@ -131,13 +131,13 @@ public class PushDialog extends BaseDialog implements View.OnClickListener
         {
             String r = remotes.get(pos);
             v = inf.inflate(R.layout.adapteritem_repo_remotes_list, null, false);
-            TextView name = v.findViewById(R.id.adapteritem_repo_remotes_list_name);
+            TextView name = (TextView) v.findViewById(R.id.adapteritem_repo_remotes_list_name);
             name.setText(r);
             v.setTag(r);
             return v;
         }
 
-        @Override
+        //@Override
         public CharSequence[] getAutofillOptions()
         {
             // TODO: Implement this method
